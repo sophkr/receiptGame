@@ -78,7 +78,7 @@ void draw(){
   if (checkTotal) {//checks to see if the selected coin values is equal to to the random number & not the correct answer will display
 
     if ((eTotal == intEndTotal)) { //checks to see if the total is correct
-       // println(eTotal + "=" + intEndTotal);
+       
       fill(0);
       noStroke();
       rect(0, 0, 850, 115);
@@ -89,7 +89,7 @@ void draw(){
       fill(255);
       text("CONGRATULATIONS! YOU WIN!!", 109, 59, 800, 100);
     } else {
-     // println(eTotal + "!=" + intEndTotal);
+     
       background(imgBackground);
       textFont(fontBody);
       textSize(20);
@@ -114,18 +114,12 @@ void keyPressed() {
     initialize();
   } 
 
-  if ((key==RETURN||key==ENTER)&&(checkTotal==false)) {//draws text on the receipt image from the textbox when enter is pressed
-    fill(255, 0, 0);
-    textSize(18);
-    textFont(fontReceipt);
-//    text(cp5.get(Textfield.class, "gumPrice").getText(), 500, 206);
-//    text(cp5.get(Textfield.class, "iceCreamPrice").getText(), 500, 267);
-//    text(cp5.get(Textfield.class, "chipsPrice").getText(), 500, 336);
-//    text(cp5.get(Textfield.class, "totalWOutTax").getText(), 500, 401);
-//    text(cp5.get(Textfield.class, "couponValue").getText(), 500, 468);
-//    text(cp5.get(Textfield.class, "taxValue").getText(), 500, 540);
-//    text(cp5.get(Textfield.class, "purchaseTotal").getText(), 500, 632);
-  }
+//  if ((key==RETURN||key==ENTER)&&(checkTotal==false)) {//draws text on the receipt image from the textbox when enter is pressed
+//    fill(255, 0, 0);
+//    textSize(18);
+//    textFont(fontReceipt);
+//
+//  }
   if (key=='h') {// press 'h' for instructions
     if (showInstructions) {
       stroke(255);
